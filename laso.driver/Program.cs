@@ -8,7 +8,7 @@ namespace Laso.Driver
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine(CoreInterop.method(true));
+            Console.WriteLine(CoreInterop.Method(true));
         }
     }
 }
