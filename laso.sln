@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "laso.core.test", "laso.core.test\laso.core.test.vcxproj", "{BD8965C0-8F34-4E9F-B9A4-7F6D408087B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1621A535-AC1F-42CB-859C-0D0CB98CE895} = {1621A535-AC1F-42CB-859C-0D0CB98CE895}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "laso.driver", "laso.driver\laso.driver.csproj", "{EF7C3F04-5936-42A8-9FAB-A9E64882AA7D}"
 EndProject
