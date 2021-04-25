@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "laso.driver.test": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    },
+    "laso.driver.test Native Debugging": {
+      "commandName": "Executable",
+      "nativeDebugging": true
+    }
+  }
+}
