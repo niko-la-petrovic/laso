@@ -1,5 +1,6 @@
 using Laso.Driver.Interop;
 using System;
+using System.Linq;
 using Xunit;
 
 namespace laso.driver.test
@@ -9,7 +10,7 @@ namespace laso.driver.test
         [Fact]
         public void AlwaysTrue()
         {
-            
+
         }
 
         [Fact]
@@ -18,5 +19,16 @@ namespace laso.driver.test
             Assert.True(CoreInterop.Method(true));
         }
 
+        [Fact]
+        public void CanCallFFT()
+        {
+            double[] signal = new double[1 << 12];
+
+            Random random = new Random();
+            for (int i = 0; i < signal.Length; i++)
+                signal[i] = (1 << 24)*random.NextDouble();
+
+            var spectralComponents = CoreInterop.FFT(signal);
+        }
     }
 }
